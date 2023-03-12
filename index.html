@@ -1,10 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Spis treści:</title>
-	</head>
-	<body>
-		Hello world
-	</body>
+  <head>
+    <title>PWI1</title>
+    <style>
+      /* Reset CSS */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Page layout */
+      body {
+        font-family: sans-serif;
+        background-image: url("https://www.dropbox.com/s/tu124rpzbqn50sy/f103016a02c1692fcde0e647c7240842.png?raw=1");
+        background-repeat: repeat;
+      }
+
+      main {
+        max-width: 1024px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+          "header header"
+          "text image"
+          "menu menu";
+        grid-gap: 20px;
+        background-color: rgba(0, 0 , 0, 0.7);
+        padding: 20px;
+      }
+	  
+
+      /* Header */
+      header {
+        grid-area: header;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+		color: #ffffff;
+      }
+
+      /* Text */
+      .text {
+        grid-area: text;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+		color: #ffffff;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      /* Image */
+      .image {
+        grid-area: image;
+        background-image: url("https://www.dropbox.com/s/orwe227co6f4pby/3b93be07c16c2a48e7749500b6cff009.png?raw=1");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 500px;
+      }
+
+      /* Menu */
+      nav {
+        grid-area: menu;
+        background-color: #343a40;
+        color: #FFF;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>Salamandra ognista</h1>
+      </header>
+      <div class="text">
+      
+        <p>Salamandra plamista, jaszczur plamisty, jaszczur ognisty – gatunek płaza ogoniastego z rodziny salamandrowatych o charakterystycznym wyglądzie i szerokim zasięgu występowania. Prowadzi samotniczy, drapieżny tryb życia. Wyróżnia się liczne podgatunki. Nazwy naukowa i polska płaza prawdopodobnie sięgają rodowodem języka perskiego, w którym słowo to oznacza „żyjąca w ogniu”. Może ono jednak pochodzić także od arabskiego słowa samandar, pod jaką nazwą salamandra funkcjonuje wciąż w arabskim i perskim.</p>
+      </div>
+      <div class="image"></div>
+      <nav>Menu</nav>
+    </main>
+  </body>
 </html>
