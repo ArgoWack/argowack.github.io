@@ -5,7 +5,7 @@ function initI18n() {
       lng: 'en', // default language
       debug: true,
       backend: {
-        loadPath: '/locales/{{lng}}.json',
+        loadPath: 'locales/{{lng}}.json',
         requestOptions: {
           mode: 'no-cors',
         },
