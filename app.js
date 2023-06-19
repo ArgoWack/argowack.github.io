@@ -1,13 +1,13 @@
 function initI18n() {
   i18next.init({
-    lng: 'en', // default language
+    lng: 'en', 
     debug: true,
     resources: {
       en: {
-        translation: {}
+        translation: {} 
       },
       pl: {
-        translation: {}
+        translation: {} 
       }
     }
   }, function(err, t) {
@@ -54,4 +54,3 @@ function changeLanguage(lng) {
     updateContent();
   });
 }
-
