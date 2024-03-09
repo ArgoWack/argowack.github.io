@@ -1,0 +1,65 @@
+body {
+  font-family: sans-serif;
+  background-image: url("plazma.png");
+  background-repeat: repeat;
+}
+
+#puzzle-container {
+  display: grid;
+  grid-gap: 10px;
+  margin: 50px auto;
+  background-color: #eee;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.puzzle-piece {
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.puzzle-empty {
+  background-color: #fff;
+}
+
+#reset-btn {
+  width: 30%;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #3d9970;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#reset-btn:hover {
+  background-color: #2ecc71;
+}
+
+@media (min-width: 480px) {
+  #puzzle-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 640px) {
+  #puzzle-container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  #puzzle-container {
+    width: 600px;
+    height: 600px;
+  }
+}
